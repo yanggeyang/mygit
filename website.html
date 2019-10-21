@@ -3,18 +3,53 @@
 <head>
 <meta charset="utf-8">
 <title>搜索引擎大全</title>
+
+<style type="text/css">
+body
+{
+    background-color: rgb(104, 157, 170);
+}
+h1{
+    color: chocolate;
+    text-align: center;
+}
+.sousuo{
+    text-align: center;
+}
+
+.sousuo-anniu{
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 12px;     <!-- font-size属性可设置按钮大小 -->
+}
+.sousuo-kuang{
+    width: 300px;
+    height: 38px;
+}
+.ssyq-tu{
+width:117px;
+height: 38px;
+text-align: center;
+float: left;
+}
+</style>
 </head>
 <body>
 
 <h1>搜索引擎大全</h1>
-<h2>搜索 音乐 视频 图片 购物</h2>
-
-<p>搜索</p>
+<div class="menu" style="text-align: center;">
+    <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ?reload=9"> 音乐 </a>
+    <a href="http://v.baidu.com/"> 视频 </a>
+    <a href="https://www.google.com/search?q=picture&tbm=isch&source=hp&sa=X&ved=2ahUKEwjWu_DP9qzlAhUCYKwKHb9ICMIQsAR6BAgFEAE&biw=1687&bih=791"> 图片 </a>
+    <a href="https://www.tmall.com/"> 购物 </a>
+</div>
+<br/>
 <div class="sousuo">
-    <form action="http://www.baidu.com",target=_blank>  <!--action的值是URL，target可以取值_blank\_self等，规定在何处打开action URL-->
-     <div class="sousuo-tupian">
+    <form action="http://www.baidu.com/baidu",target=_blank>  <!--action的值是URL，target可以取值_blank\_self等，规定在何处打开action URL-->
+     <div class="sousuo-tupian" style="text-align: center;" >
          <a href="http://www.baidu.com",title="百度搜索">  <!--href的值是URL，title是一个全局属性，是tooltip显示的值-->
-           <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\baidu.png" width="100" height="50" />
+           <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\baidu.png" width="100" height="38" />
          </a>
      </div>
     <input type="text" class="sousuo-kuang" name="wd">
@@ -22,34 +57,33 @@
     </form>
 </div>
 
-<!--
-<p>
-图片链接：<a href = "http://www.baidu.com">
-<img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\baidu.png" width="100" height="50" />
-</a>
-</p>
+<br/>
 
-<div>
-<form action="http://www.baidu.com" target="_blank">
-    <input id="kw" type ="text" name ="baidu" maxlength="255">
-    <button type="submit" value="提交" width="100" height="50">百度一下</button>
-</form>
+<div class="sousuo">
+  <form action="https://www.google.com/search",target=_blank>
+  <div class="sousuo-tupian">
+      <a href="https://www.google.com/",title="谷歌搜索">
+     <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\google.png" width="100" height="38" />
+     </a>
+    </div>
+    <input type="text" class="sousuo-kuang" name="q">
+    <button type="submit" class="sousuo-anniu">谷歌搜索</button>
+  </form>
 </div>
--->
-<br/>
-<p>
-图片链接：<a href="https://www.google.com/">
-<img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\google.png" width="100" height="50" />
-</a>
-</p>
-<form action="https://www.google.com/" target="_blank">
-    <input id="kw" type ="text" name ="baidu" maxlength="255">
-    <button type="submit" value="提交" width="100" height="50">谷歌搜索</button>
-</form>
+
 <br/>
 
-<p>音乐</p>
-<a href="http://www.baidu.com"> QQ音乐</a>
+<div class="sousuo">
+    <form action="http://www.so.com/s",target=_blank>  
+     <div class="sousuo-tupian"  >
+         <a href="https://www.so.com/",title="360搜索"> 
+           <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\360.png" width="100" height="38" />
+         </a>
+     </div>
+    <input type="text" class="sousuo-kuang" name="q" >
+    <button type="submit" class="sousuo-anniu" >360搜索</button>
+    </form>
+</div>
 
 <br/>
 <a href="https://www.google.com/"> 酷狗音乐</a>
@@ -70,17 +104,11 @@
 <br/>
 
 <p>购物</p>
-<a href="http://www.baidu.com"> 淘宝</a>
+<a href="https://s.taobao.com/"> 淘宝</a>
 <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\taobao.jpg" width="100" height="50" />
 <br/>
 <a href="https://www.google.com/"> 京东</a>
 <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jd.png" width="100" height="50" />
-<br/>
-<!--用vscode写代码
-随时提交到github
-整理出参考网页里边使用频率80%的常用10个标签
-学习这10个标签的用法-->
-
-
-</body>
+ <br/>
+ </body>
 </html>
