@@ -1,114 +1,185 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>搜索引擎大全</title>
-
-<style type="text/css">
-body
-{
-    background-color: rgb(104, 157, 170);
+ <head>
+  <meta charset="utf-8">
+  <title>搜索引擎大全</title>
+  <style>
+  body{margin: 0;}
+  .header{
+      background-color: silver;
+      padding: 8px;
+      text-align: centers;
+  }
+  .topnav{
+      overflow: hidden;
+      background-color: slategray;
+  }
+li{
+    width:200px; text-align: center; list-style: none; display: inline-block; background-color: #eee;
 }
-h1{
-    color: chocolate;
-    text-align: center;
+  .column{
+      float: left;
+      padding: 10px;
+  }
+  .column.side{
+      width: 25%;
+  }
+  .column.middle{
+     
+      width: 50%;
+  }
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.sousuo{
-    text-align: center;
-}
-
-.sousuo-anniu{
-    border: none;
-    padding: 10px 25px;
-    text-align: center;
-    font-size: 12px;     <!-- font-size属性可设置按钮大小 -->
-}
-.sousuo-kuang{
-    width: 300px;
-    height: 38px;
-}
-.ssyq-tu{
-width:117px;
-height: 38px;
-text-align: center;
-float: left;
-}
-</style>
-</head>
+  .footer{
+      background-color: thistle;
+      padding: 2px;
+      text-align: center;
+  }
+  </style>
+ </head>
 <body>
 
-<h1>搜索引擎大全</h1>
-<div class="menu" style="text-align: center;">
-    <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ?reload=9"> 音乐 </a>
-    <a href="http://v.baidu.com/"> 视频 </a>
-    <a href="https://www.google.com/search?q=picture&tbm=isch&source=hp&sa=X&ved=2ahUKEwjWu_DP9qzlAhUCYKwKHb9ICMIQsAR6BAgFEAE&biw=1687&bih=791"> 图片 </a>
-    <a href="https://www.tmall.com/"> 购物 </a>
-</div>
-<br/>
-<div class="sousuo">
-    <form action="http://www.baidu.com/baidu",target=_blank>  <!--action的值是URL，target可以取值_blank\_self等，规定在何处打开action URL-->
-     <div class="sousuo-tupian" style="text-align: center;" >
-         <a href="http://www.baidu.com",title="百度搜索">  <!--href的值是URL，title是一个全局属性，是tooltip显示的值-->
-           <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\baidu.png" width="100" height="38" />
-         </a>
-     </div>
-    <input type="text" class="sousuo-kuang" name="wd">
-    <button type="submit" class="sousuo-anniu">百度一下</button>
-    </form>
-</div>
-
-<br/>
-
-<div class="sousuo">
-  <form action="https://www.google.com/search",target=_blank>
-  <div class="sousuo-tupian">
-      <a href="https://www.google.com/",title="谷歌搜索">
-     <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\google.png" width="100" height="38" />
-     </a>
+    <div class="header">
+      <h1>搜索引擎大全</h1>
+      <p>
+            搜索引擎大全收录了众多主流搜索引擎，为广大网民提供免费快捷搜索渠道，
+            集成各家搜索引擎大全的优势，不仅仅是普通搜索，
+            还有图片搜索，音乐搜索，视频搜索，购物搜索，微信微博搜索，知识词典搜索大全，各种搜索引擎集大成。
+        </p>
     </div>
-    <input type="text" class="sousuo-kuang" name="q">
-    <button type="submit" class="sousuo-anniu">谷歌搜索</button>
-  </form>
+<br/>
+<div class="topnav">
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ?reload=9"> 音乐 </a></li>
+        <li><a href="http://v.baidu.com/"> 视频 </a></li>
+        <li><a href="https://www.google.com/search?q=picture&tbm=isch&source=hp&sa=X&ved=2ahUKEwjWu_DP9qzlAhUCYKwKHb9ICMIQsAR6BAgFEAE&biw=1687&bih=791"> 图片 </a></li>
+        <li><a href="https://www.tmall.com/"> 购物 </a></li>
+    </ul>
 </div>
 
 <br/>
-
-<div class="sousuo">
-    <form action="http://www.so.com/s",target=_blank>  
-     <div class="sousuo-tupian"  >
-         <a href="https://www.so.com/",title="360搜索"> 
-           <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\360.png" width="100" height="38" />
-         </a>
-     </div>
-    <input type="text" class="sousuo-kuang" name="q" >
-    <button type="submit" class="sousuo-anniu" >360搜索</button>
-    </form>
+<div class="row">
+    <div class="column side">
+    </div>
+    <div class="column middle">
+            <div>
+                    <form action="http://www.baidu.com/baidu",target=_blank> 
+                        
+                             <a href="http://www.baidu.com">  
+                              <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\baidu.png"/>
+                            </a>			  
+                           <input type="text" class="sousuo-kuang" name="wd">			
+                         <button type="submit" class="sousuo-anniu">百度一下</button>			   
+                    </form>
+            </div>
+                <!--
+                    <div class="sousuo">
+                      <form action="http://www.baidu.com/baidu",target=_blank> 
+                     <div class="sousuo-tupian" style="text-align: center;" >
+                         <a href="http://www.baidu.com",title="百度搜索">  
+                           <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\baidu.png" />
+                         </a>
+                     </div>
+                     <input type="text" class="sousuo-kuang" name="wd">
+                     <button type="submit" class="sousuo-anniu">百度一下</button>
+                      </form>
+                   </div>-->
+             <br/>
+                
+            <form action="https://www.google.com/search",target=_blank>
+                <a href="https://www.google.com/">
+                     <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\google.png"/>
+                     </a>
+               
+                    <input type="text" class="sousuo-kuang" name="q">
+                    <button type="submit" class="sousuo-anniu">谷歌搜索</button>
+            </form>
+                        
+                <br/>
+                
+            <form action="http://www.so.com/s",target=_blank>  
+                    
+                         <a href="https://www.so.com/",title="360搜索"> 
+                           <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\360.png" />
+                         </a>
+                     
+                    <input type="text" class="sousuo-kuang" name="q" >
+                    <button type="submit" class="sousuo-anniu" >360搜索</button>
+            </form>
+                               
+                <style type="text/css">
+                    body
+                    {
+                        background-color: rgb(104, 157, 170);
+                    }
+                    h1{
+                        color: chocolate;
+                        text-align: center;
+                    }
+                    .sousuo{
+                        display: inline-block;
+                        text-align: center;
+                    }
+                    
+                    .sousuo-anniu{
+                        
+                        border: none;
+                        padding: 10px 25px;
+                        text-align: center;
+                        font-size: 12px;     <!-- font-size属性可设置按钮大小 -->
+                    }
+                    .sousuo-kuang{
+                        
+                        width: 300px;
+                        height: 38px;
+                    }
+                    .sousuo-tupian{
+                    display: inline-block;
+                    width:50px;
+                    height: 38px;
+                    float: left;
+                    }
+                    </style>
+                <br/>
+                <a href="https://www.google.com/"> 酷狗音乐</a>
+                <br/>
+                
+                <p>视频</p>
+                <a href="http://www.baidu.com"> 搜狗影视</a>
+                
+                <br/>
+                <a href="https://www.google.com/"> 360影视</a>
+                <br/>
+                
+                <p>图片</p>
+                <a href="http://www.baidu.com"> 百度图片</a>
+                
+                <br/>
+                <a href="https://www.google.com/"> 360图片</a>
+                <br/>
+              
+                <p>购物</p>
+                <a href="https://s.taobao.com/"> 淘宝</a>
+                <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\taobao.jpg" width="100" height="50" />
+                <br/>
+                <a href="https://www.google.com/"> 京东</a>
+                <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jd.png" width="100" height="50" />
+                 <br/>
+    </div>
+    <div class="column side">
+    </div>  
 </div>
+<div class="footer">
+        <p>联系我们</p>
+</div> 
+<!--
+ weizhi: display: inline-block 
+ min-width max-width width: 80% vs pixel
 
-<br/>
-<a href="https://www.google.com/"> 酷狗音乐</a>
-<br/>
+ height: margin padding border-->
 
-<p>视频</p>
-<a href="http://www.baidu.com"> 搜狗影视</a>
-
-<br/>
-<a href="https://www.google.com/"> 360影视</a>
-<br/>
-
-<p>图片</p>
-<a href="http://www.baidu.com"> 百度图片</a>
-
-<br/>
-<a href="https://www.google.com/"> 360图片</a>
-<br/>
-
-<p>购物</p>
-<a href="https://s.taobao.com/"> 淘宝</a>
-<img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\taobao.jpg" width="100" height="50" />
-<br/>
-<a href="https://www.google.com/"> 京东</a>
-<img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jd.png" width="100" height="50" />
- <br/>
  </body>
 </html>
