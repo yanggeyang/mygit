@@ -17,40 +17,17 @@
 li{
     width:200px; text-align: center; list-style: none; display: inline-block; background-color: #eee;
 }
-  .column{
-      float: left;
-      padding: 10px;
-  }
-  .column.side{
-      width: 25%;
-  }
-  .column.middle{
-     
-      background-color: white;
-      text-align: center;
-      width: 50%;
-  }
-  .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-  .footer{
-      background-color: thistle;
-      padding: 2px;
-      text-align: center;
-  }
   </style>
  </head>
 <body>
 
     <div class="header">
       <h1>搜索引擎大全</h1>
-      <p>
+      <!--<p>
             搜索引擎大全收录了众多主流搜索引擎，为广大网民提供免费快捷搜索渠道，
             集成各家搜索引擎大全的优势，不仅仅是普通搜索，
             还有图片搜索，音乐搜索，视频搜索，购物搜索，微信微博搜索，知识词典搜索大全，各种搜索引擎集大成。
-        </p>
+        </p>-->
     </div>
 <br/>
 <div class="topnav">
@@ -62,19 +39,17 @@ li{
     </ul>
 </div>
 
-<br/>
-<div class="row">
-    <div class="column side">
-    </div>
-    <div class="column middle">
-           
+           <div class="sousuoyinqing">
                     <form action="http://www.baidu.com/baidu" target=_blank> 
-                        
+                        <div class="sousuo-tupian">
                              <a href="http://www.baidu.com">  
                               <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\baidu.png"/>
-                            </a>			  
+                            </a>	
+                        </div>	
+                        <div>  
                            <input type="text" class="sousuo-kuang" name="wd">			
-                         <button type="submit" class="sousuo-anniu">百度一下</button>			   
+                         <button type="submit" class="sousuo-anniu">百度一下</button>
+                        </div>				   
                     </form>
           
                 <!--
@@ -89,89 +64,123 @@ li{
                      <button type="submit" class="sousuo-anniu">百度一下</button>
                       </form>
                    </div>-->
-             <br/>                
+                </div>   
+            <div class="sousuoyinqing">         
             <form action="https://www.google.com/search" target=_blank>
-                <a href="https://www.google.com/">
+                <div class="sousuo-tupian">
+                     <a href="https://www.google.com/">
                      <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\google.png"/>
                      </a>
-               
+                </div>
+                <div> 
                     <input type="text" class="sousuo-kuang" name="q">
                     <button type="submit" class="sousuo-anniu">谷歌搜索</button>
+                </div>	  
             </form>
                         
-                <br/>
-                
+        </div>
+        <div class="sousuoyinqing">  
             <form action="http://www.so.com/s" target=_blank>  
-                    
+                <div class="sousuo-tupian">
                          <a href="https://www.so.com/",title="360搜索"> 
                            <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\360.png" />
                          </a>
-                     
+                </div>  
+                <div>     
                     <input type="text" class="sousuo-kuang" name="q" >
-                    <button type="submit" class="sousuo-anniu" >360搜索</button>
+                    <button type="submit" class="sousuo-anniu" >360搜索</button> 
+                </div>	
             </form>
-            <br/>
+        </div>
+        <div class="sousuoyinqing">
                     <form action="https://www.sogou.com/web" target=_blank> 
-                        
+                        <div class="sousuo-tupian">
                              <a href="https://www.sogou.com/">  
                               <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\sougou.png"/>
-                            </a>			  
+                            </a>	
+                        </div>	
+                        <div> 	  
                            <input type="text" class="sousuo-kuang" name="query">			
-                         <button type="submit" class="sousuo-anniu">搜狗搜索</button>			   
+                         <button type="submit" class="sousuo-anniu">搜狗搜索</button>	
+                        </div>			   
                     </form>
-                    <br/>
+                </div>
+                <div class="sousuoyinqing">
                     <form action="https://www.bing.com/search" target=_blank> 
-                        
+                        <div class="sousuo-tupian">
                              <a href="https://www.bing.com/?mkt=zh-CN">  
                               <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\bing.png"/>
-                            </a>			  
+                            </a>
+                        </div>
+                        <div> 	  
                            <input type="text" class="sousuo-kuang" name="q">			
-                         <button type="submit" class="sousuo-anniu">Bing搜索</button>			   
+                         <button type="submit" class="sousuo-anniu">Bing搜索</button>	
+                        </div>			   
                     </form>
-                    <br/>
+                </div>
+                <div class="sousuoyinqing">
                     <form action="https://search.yahoo.com/search" target=_blank> 
-                        
+                        <div class="sousuo-tupian">
                              <a href="https://search.yahoo.com/">  
                               <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\yahoo.png"/>
-                            </a>			  
+                            </a>
+                        </div>
+                        <div> 	  
                            <input type="text" class="sousuo-kuang" name="q">			
-                         <button type="submit" class="sousuo-anniu">雅虎搜索</button>			   
+                         <button type="submit" class="sousuo-anniu">雅虎搜索</button>	
+                        </div>			   
                     </form>    
-                    <br/>
+                </div>
+                <div class="sousuoyinqing">
                     <form action="https://s.taobao.com/search" target=_blank> 
-                        
+                        <div class="sousuo-tupian">
                              <a href="https://s.taobao.com/">  
                               <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\taobao.jpg"/>
-                            </a>			  
+                            </a>
+                        </div>	
+                        <div> 		  
                            <input type="text" class="sousuo-kuang" name="q">			
-                         <button type="submit" class="sousuo-anniu">淘宝搜索</button>			   
+                         <button type="submit" class="sousuo-anniu">淘宝搜索</button>	
+                        </div>			   
                     </form> 
-                    <br/>
+                </div>
+                <div class="sousuoyinqing">
                     <form action="https://list.tmall.com/search_product.htm" target=_blank> 
-                        
+                        <div class="sousuo-tupian">
                              <a href="https://www.tmall.com">  
                               <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\tianmao.png"/>
-                            </a>			  
+                            </a>
+                        </div>	
+                        <div> 		  
                            <input type="text" class="sousuo-kuang" name="q">			
-                         <button type="submit" class="sousuo-anniu">天猫搜索</button>			   
+                         <button type="submit" class="sousuo-anniu">天猫搜索</button>
+                        </div>				   
                     </form> 
-                    <br/>
+                </div>
+                <div class="sousuoyinqing">
                     <form action="https://s.hc360.com" target=_blank> 
-                        
+                        <div class="sousuo-tupian">
                              <a href="https://www.hc360.com/">  
                               <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\huicong.png"/>
-                            </a>			  
+                            </a>
+                        </div>		
+                        <div> 	  
                            <input type="text" class="sousuo-kuang" name="w">			
-                         <button type="submit" class="sousuo-anniu">慧聪搜索</button>			   
+                         <button type="submit" class="sousuo-anniu">慧聪搜索</button>	
+                        </div>			   
                     </form> 
-                    <br/>
+                </div>
+                <div class="sousuoyinqing">
                     <form action="https://search.jd.com/Search" target=_blank> 
-                        
+                        <div class="sousuo-tupian">
                              <a href="https://corporate.jd.com/home">  
                               <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jd.png"/>
-                            </a>			  
+                            </a>
+                        </div>		
+                        <div> 	  
                            <input type="text" class="sousuo-kuang" name="keyword">			
-                         <button type="submit" class="sousuo-anniu">京东搜索</button>			   
+                         <button type="submit" class="sousuo-anniu">京东搜索</button>	
+                        </div>			   
                     </form>          
                 <style type="text/css">
                     body
@@ -182,58 +191,48 @@ li{
                         color: chocolate;
                         text-align: center;
                     }
-
-                    .sousuo-anniu{
-                        
-                        border: none;
-                        padding: 10px 25px;
+                    .sousuoyinqing{
+                        background-color: white;
+                        width: 600px;
+                        height: 38px;
+                        margin: 0 auto;
+                        padding-bottom: 20px;
+                        overflow: hidden;  <!--overlow属性指定如果内容溢出一个元素的框，该如何处理-->
+                    }
+                    .sousuo-tupian{
+                        width: 117px;
+                        height: 38px;
                         text-align: center;
-                        font-size: 12px;     <!-- font-size属性可设置按钮大小 -->
+                        float: left;
+                    }
+                    .sousuo-tupian img{
+                        width: auto;
+                        height: auto;
+                        vertical-align: middle; <!--vertical-align属性设置一个元素的垂直对齐方式，middle：把此元素放在父元素的中部-->
+                    }
+                   .sousuo-anniu{
+                        height: 31px;
+                        width: 93px;
+                        padding: 0px;
+                        margin-top: 7px;
+                        margin-left: 10px;
+                        cursor: pointer;   <!--cursor属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状,default是箭头，pointer是小手-->
+                        float: left;
                     }
                     .sousuo-kuang{
-                        
-                        width: 300px;
-                        height: 38px;
-                    }
-                                          
-                    </style>
-                <br/>
-                <a href="https://www.google.com/"> 酷狗音乐</a>
-                <br/>
-                
-                <p>视频</p>
-                <a href="http://www.baidu.com"> 搜狗影视</a>
-                
-                <br/>
-                <a href="https://www.google.com/"> 360影视</a>
-                <br/>
-                
-                <p>图片</p>
-                <a href="http://www.baidu.com"> 百度图片</a>
-                
-                <br/>
-                <a href="https://www.google.com/"> 360图片</a>
-                <br/>
-              
-                <p>购物</p>
-                <a href="https://s.taobao.com/"> 淘宝</a>
-                <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\taobao.jpg" width="100" height="50" />
-                <br/>
-                <a href="https://www.google.com/"> 京东</a>
-                <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jd.png" width="100" height="50" />
-                 <br/>
-    </div>
-    <div class="column side">
-    </div>  
+                        line-height: 21px;
+                        width: 353px;
+                        height: 23px;
+                        padding: 3px 2px;
+                        font-size: 16px;
+                        border: 1px solid #a2a2a2;
+                        margin-left: 20px;
+                        margin-top: 7px;
+                        float: left;
+                    }                                         
+                    </style>          
+               
+
 </div>
-<div class="footer">
-        <p>联系我们</p>
-</div> 
-<!--
- weizhi: display: inline-block 
- min-width max-width width: 80% vs pixel
-
- height: margin padding border-->
-
  </body>
 </html>
