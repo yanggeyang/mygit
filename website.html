@@ -9,14 +9,18 @@
       margin: 0;
       padding: 0;
       
-      /*background-image: url("./搜索引擎大全_files/pink.jpg");*/   /*照片文件和代码同级，只要一个.就够了，上一级用..。MAC上用后斜杠，Windows上用前斜杠*/
-      background-color: rgb(104, 157, 170);
+      background-image: url("./img/bying2.jpg");  /*照片文件和代码同级，只要一个.就够了，上一级用..。MAC上用后斜杠，Windows上用前斜杠*/
+      /*background-color: rgb(104, 157, 170);*/
     }
   .header{
-      background-color: rgb(236, 214, 236);
+      /*background-color: rgb(236, 214, 236);*/
       padding: 2px;
       text-align: centers;
   }
+  h1{
+    color: white;
+    text-align: center;
+}
   .topnav{
       overflow: hidden;
       background-color: slategray;
@@ -57,12 +61,48 @@ li{
    </ul>
 </div>
 <br>
+<div class="xinxianshi">
+       <a href="http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b342_c513" target="_blank">随时随地，来点新鲜事儿</a>
+</div>
 <div class="zhongkuang">
+    <div>
+        <input type="text" id="tishi" class="sousuokuang" placeholder="请输入您想查找的内容">
+    </div>
+</div>
+    <style type="text/css">
+                        .zhongkuang{
+                        border: thistle solid;
+                        background-color: white;
+                        width: 980px;
+                        height: 400px;
+                        margin: auto;
+                        padding: 5px;
+                        text-align: center;
+                    }    
+                    .xinxianshi{
+                        text-align: right;
+                        margin-bottom: 5px;
+                    }
+                       .sousuokuang{
+                        line-height: 21px;
+                        width: 353px;
+                        height: 23px;
+                        padding: 3px 2px;
+                        font-size: 16px;
+                        border: 1px solid #a2a2a2;
+                        margin-left: 20px;
+                        margin-top: 7px;
+                        text-align: center;
+                       }  
+                  
+    </style>
+
+<!--
     <div class="sousuoyinqing">
                     <form action="http://www.baidu.com/baidu" target=_blank> 
                         <div class="sousuo-tupian">
                              <a title="百度一下" href="http://www.baidu.com" target="_blank">  
-                              <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\baidu.png"/>
+                              <img src="C:\Users\magic\Documents\codes\git\img\baidu.png"/>
                             </a>	
                         </div>	
                         <div>  
@@ -70,25 +110,12 @@ li{
                          <button type="submit" class="sousuo-anniu">百度一下</button>
                         </div>				   
                     </form>
-          
-                <!--
-                    <div class="sousuo">
-                      <form action="http://www.baidu.com/baidu",target=_blank> 
-                     <div class="sousuo-tupian" style="text-align: center;" >
-                         <a href="http://www.baidu.com",title="百度搜索">  
-                           <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\baidu.png" />
-                         </a>
-                     </div>
-                     <input type="text" class="sousuo-kuang" name="wd">
-                     <button type="submit" class="sousuo-anniu">百度一下</button>
-                      </form>
-                   </div>-->
-                </div>   
+    </div>   
             <div class="sousuoyinqing">         
             <form action="https://www.google.com/search" target=_blank>
                 <div class="sousuo-tupian">
                      <a title="谷歌搜索" href="https://www.google.com/" target="_blank">
-                     <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\google.png"/>
+                     <img src="C:\Users\magic\Documents\codes\git\img\google.png"/>
                      </a>
                 </div>
                 <div> 
@@ -102,7 +129,7 @@ li{
             <form action="http://www.so.com/s" target=_blank>  
                 <div class="sousuo-tupian">
                          <a title="360搜索" href="https://www.so.com/" target="_blank"> 
-                           <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\360.png" />
+                           <img src="C:\Users\magic\Documents\codes\git\img\360.png" />
                          </a>
                 </div>  
                 <div>     
@@ -115,7 +142,7 @@ li{
                     <form action="https://www.sogou.com/web" target=_blank> 
                         <div class="sousuo-tupian">
                              <a title="搜狗搜索"href="https://www.sogou.com/" target="_blank">  
-                              <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\sougou.png"/>
+                              <img src="C:\Users\magic\Documents\codes\git\img\sougou.png"/>
                             </a>	
                         </div>	
                         <div> 	  
@@ -128,7 +155,7 @@ li{
                     <form action="https://www.bing.com/search" target=_blank> 
                         <div class="sousuo-tupian">
                              <a title="Bing搜索" href="https://www.bing.com/?mkt=zh-CN" target="_blank">  
-                              <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\bing.png"/>
+                              <img src="C:\Users\magic\Documents\codes\git\img\bing.png"/>
                             </a>
                         </div>
                         <div> 	  
@@ -141,7 +168,7 @@ li{
                     <form action="https://search.yahoo.com/search" target=_blank> 
                         <div class="sousuo-tupian">
                              <a title="雅虎搜索" href="https://search.yahoo.com/" target="_blank">  
-                              <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\yahoo.png"/>
+                              <img src="C:\Users\magic\Documents\codes\git\img\yahoo.png"/>
                             </a>
                         </div>
                         <div> 	  
@@ -154,7 +181,7 @@ li{
                     <form action="https://s.taobao.com/search" target=_blank> 
                         <div class="sousuo-tupian">
                              <a title="淘宝搜索" href="https://s.taobao.com/" target="_blank">  
-                              <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\taobao.jpg"/>
+                              <img src="C:\Users\magic\Documents\codes\git\img\taobao.jpg"/>
                             </a>
                         </div>	
                         <div> 		  
@@ -167,7 +194,7 @@ li{
                     <form action="https://list.tmall.com/search_product.htm" target=_blank> 
                         <div class="sousuo-tupian">
                              <a title="天猫搜索" href="https://www.tmall.com" target="_blank">  
-                              <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\tianmao.png"/>
+                              <img src="C:\Users\magic\Documents\codes\git\img\tianmao.png"/>
                             </a>
                         </div>	
                         <div> 		  
@@ -176,11 +203,12 @@ li{
                         </div>				   
                     </form> 
                 </div>
+              
                 <div class="sousuoyinqing">
                     <form action="https://s.hc360.com" target=_blank> 
                         <div class="sousuo-tupian">
                              <a title="慧聪搜索" href="https://www.hc360.com/" target="_blank">  
-                              <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\huicong.png"/>
+                              <img src="C:\Users\magic\Documents\codes\git\img\huicong.png"/>
                             </a>
                         </div>		
                         <div> 	  
@@ -193,21 +221,19 @@ li{
                     <form action="https://search.jd.com/Search" target=_blank> 
                         <div class="sousuo-tupian">
                              <a title="京东搜索" href="https://corporate.jd.com/home" target="_blank">  
-                              <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jd.png"/>
+                              <img src="C:\Users\magic\Documents\codes\git\img\jd.png"/>
                             </a>
                         </div>		
                         <div> 	  
                            <input type="text" class="sousuo-kuang" name="keyword">			
                          <button type="submit" class="sousuo-anniu">京东搜索</button>	
                         </div>			   
-                    </form>         
+                    </form>     
+                 </div>    
+-->
 
                 <style type="text/css">
-
-                    h1{
-                        color: chocolate;
-                        text-align: center;
-                    }
+                   
                     .sousuoyinqing{
                         background-color: white;
                         width: 600px;
@@ -225,7 +251,7 @@ li{
                     .sousuo-tupian img{
                         width: auto;
                         height: auto;
-                        vertical-align: middle; /*vertical-align属性设置一个元素的垂直对齐方式，middle：把此元素放在父元素的中部*/
+                        vertical-align: middle;
                     }
                    .sousuo-anniu{
                         height: 31px;
@@ -233,7 +259,7 @@ li{
                         padding: 0px;
                         margin-top: 7px;
                         margin-left: 10px;
-                        cursor: pointer;  /*cursor属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状,default是箭头，pointer是小手*/
+                        cursor: pointer;  
                         float: left;
                     }
                     .sousuo-anniu:hover{
@@ -250,20 +276,10 @@ li{
                         margin-left: 20px;
                         margin-top: 7px;
                         float: left;
-                    }    
-                    .zhongkuang{
-                        border: thistle solid;
-                        background-color: white;
-                        width: 980px;
-                        height: auto;
-                        margin: auto;
-                        padding: 5px;
-                        text-align: center;
-                    }    
-                               
+                    }   
+       
                 </style>          
-    </div>
-</div>
+
                 <style type="text/css">
                     .biaoti-kuang{
                                                                  
@@ -293,37 +309,37 @@ li{
                     }
                    
                 </style>  
-
+<!--
     <div class="biaoti-kuang" >音乐搜索引擎
             <div  class="zi-lianjie">
-                    <li>              <!--li标签定义列表项目-->
+                    <li>              
                     <a title="点击查看简介" 
                     href="https://baike.baidu.com/item/%E5%8D%83%E5%8D%83%E9%9F%B3%E4%B9%90/4251967?fr=aladdin" target="_blank">  
-                    <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                    <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                     </a>
                     <a href="http://music.taihe.com/" target="_blank"> 千千音乐 </a></li>
 
                     <li><a title="点击查看简介" 
                     href="https://baike.baidu.com/item/QQ%E9%9F%B3%E4%B9%90/1157130?fr=aladdin" target="_blank">  
-                    <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                    <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                     </a>
                     <a href="https://y.qq.com/" target="_blank"> QQ音乐 </a></li>
 
                     <li><a title="点击查看简介" 
                         href="https://baike.baidu.com/item/酷狗音乐/2710730?fr=aladdin" target="_blank">  
-                        <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                        <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                         </a>
                     <a href="http://www.kugou.com/" target="_blank"> 酷狗音乐 </a></li>
 
                     <li><a title="点击查看简介" 
                         href="https://baike.baidu.com/item/%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90%E7%9B%92/5277156?fromtitle=%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90&fromid=1000110&fr=aladdin" target="_blank">  
-                        <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                        <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                         </a>
                     <a href="http://www.kuwo.cn/" target="_blank"> 酷我音乐 </a></li>
 
                     <li><a title="点击查看简介" 
                         href="https://baike.baidu.com/item/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/4453795?fr=aladdin" target="_blank">  
-                        <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                        <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                         </a>
                     <a href="https://music.163.com/" target="_blank"> 网易云音乐 </a></li>
             </div>  
@@ -334,31 +350,31 @@ li{
 
                     <li><a title="点击查看简介" 
                     href="https://baike.baidu.com/item/360%E5%9B%BE%E7%89%87" target="_blank">  
-                    <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                    <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                     </a>
                     <a href="https://image.so.com/" target="_blank"> 360图片 </a></li>
 
                     <li><a title="点击查看简介" 
                         href="https://baike.baidu.com/item/%E7%99%BE%E5%BA%A6%E5%9B%BE%E7%89%87" target="_blank">  
-                        <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                        <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                         </a>
                     <a href="http://image.baidu.com/" target="_blank"> 百度图片 </a></li>
 
                     <li><a title="点击查看简介" 
                         href="https://baike.baidu.com/item/%E6%87%92%E4%BA%BA%E5%9B%BE%E5%BA%93/6677989?fr=aladdin" target="_blank">  
-                        <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                        <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                         </a>
                     <a href="http://www.lanrentuku.com/" target="_blank"> 懒人图库 </a></li>
 
                     <li><a title="点击查看简介" 
                         href="https://baike.baidu.com/item/%E8%8A%B1%E7%93%A3%E7%BD%91" target="_blank">  
-                        <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                        <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                         </a>
                     <a href="https://huaban.com" target="_blank"> 花瓣网 </a></li>
 
                     <li><a title="点击查看简介" 
                         href="https://baike.baidu.com/item/%E6%91%84%E5%9B%BE%E7%BD%91" target="_blank">  
-                        <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                        <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                         </a>
                     <a href="http://699pic.com/" target="_blank"> 摄图网 </a></li>
             </div>  
@@ -369,52 +385,54 @@ li{
 
                     <li><a title="点击查看简介" 
                     href="https://baike.baidu.com/item/%E7%99%BE%E5%BA%A6%E8%A7%86%E9%A2%91" target="_blank">  
-                    <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                    <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                     </a>
                     <a href="http://v.baidu.com/" target="_blank"> 百度视频 </a></li>
 
                     <li><a title="点击查看简介" 
                         href="https://baike.baidu.com/item/%E7%88%B1%E5%A5%87%E8%89%BA/1523627" target="_blank">  
-                        <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                        <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                         </a>
                     <a href="https://www.iqiyi.com/" target="_blank"> 爱奇艺 </a></li>
 
                     <li><a title="点击查看简介" 
                         href="https://baike.baidu.com/item/%E4%BC%98%E9%85%B7%E7%BD%91/10727008?fromtitle=%E4%BC%98%E9%85%B7&fromid=10981648&fr=aladdin" target="_blank">  
-                        <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                        <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                         </a>
                     <a href="https://www.youku.com/" target="_blank"> 优酷 </a></li>
 
                     <li><a title="点击查看简介" 
                         href="https://baike.baidu.com/item/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91" target="_blank">  
-                        <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                        <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                         </a>
                     <a href="http://v.qq.com/" target="_blank"> 腾讯视频 </a></li>
 
                     <li><a title="点击查看简介" 
                         href="https://baike.baidu.com/item/%E8%8A%92%E6%9E%9CTV" target="_blank">  
-                        <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\jianjie.gif"/>
+                        <img src="C:\Users\magic\Documents\codes\git\img\jianjie.gif"/>
                         </a>
                     <a href="https://www.mgtv.com/" target="_blank"> 芒果TV </a></li>
             </div>  
     </div>
+    -->
 <!--hr标签定义一条线-->  
 <!--
 <hr style="width: 990px; height:5px;margin: 0 0 5 0;border: none;border-top: wheat 5px ridge;">    
 -->  
+<!--
 <div class="xiakuang">
        
         <div class="baidu">
         <form action="http://www.baidu.com/baidu" target=_blank> 
                  <div class="baidu-img">
                  <a title="百度一下" href="http://www.baidu.com" target="_blank" >  
-                  <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\baidu.png"/>
+                  <img src="C:\Users\magic\Documents\codes\git\img\baidu.png"/>
                 </a></div>	
              <input type="text" class="baidu-kuang" name="wd">			
              <button type="submit" class="baidu-anniu">百度一下</button> 
              <div class="backtotop">
                  <a href="#top" target="_self">
-                     <img src="C:\Users\magic\Documents\codes\git\搜索引擎大全_files\12345huidaodingbu.gif"/>
+                     <img src="C:\Users\magic\Documents\codes\git\img\12345huidaodingbu.gif"/>
                 </a>  
                 			   
                 </div> 
@@ -422,6 +440,7 @@ li{
         </div>    
 
 </div>
+-->
 
                     <style type="text/css">
                         .xiakuang{
@@ -501,13 +520,14 @@ li{
                     }
 
                     </style>
-
+<!--
 <div id="footer">
 
 Copyright © 2019 Yang Geyang
 <br>
 <span id="powered by">powered by html and css on Windows10.</span>
 </div>
+-->
 <style type="text/css">
 #footer{
     text-align: center;
@@ -517,5 +537,39 @@ Copyright © 2019 Yang Geyang
     font: 15px bold;
 }
 </style>
+   <script type="text/javascript">
+    var curIndex = 0;
+    //时间间隔(单位毫秒)，每秒钟显示一张，数组共有3张图片放在img文件夹下
+    var timeInterval = 8000;
+    
+                            //定义一个存放照片位置的数组，可以放任意个，在这里放3个
+    var arr = new Array();
+    arr[0] = "img/bying2.jpg";
+    arr[1] = "img/bying5.jpg";
+    arr[2] = "img/bying7.jpg";
+    arr[3] = "img/bying8.jpg";
+    arr[4] = "img/bying5.jpg";
+    setInterval(changeImg, timeInterval);
+    function changeImg() {
+    if (curIndex == arr.length - 1) {
+    curIndex = 0;
+    } else {
+    curIndex += 1;
+    }
+    
+                                      //设置body的背景图片
+    document.body.style.backgroundImage = "URL("+arr[curIndex]+")";  //显示对应的图片
+    }
+    </script>
+   
  </body>
 </html>  
+<!--
+    1、导航栏和页面下方li元素，使鼠标点击字周围区域也可跳转；
+    2、下方引擎“简”图标和文字不够平齐；
+    3、页面顶部做一个可以动态切换的图片；
+    4、页面配色重新配置；
+    5、背景图片可以切换，参考Biying；
+    6、上面一个输入框，下面多个图标，点击跳转到搜索结果；
+    7、无聊的时候，给用户提供可浏览内容；
+-->

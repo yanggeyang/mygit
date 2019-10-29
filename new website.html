@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link href="sou.ico" rel="icon" type="image/x-icon" />
+  <title>搜索引擎大全</title>
+  <style type="text/css">
+  body{
+      margin: 0;
+      padding: 0;
+      background-image: url("./img/bying2.jpg"); 
+    }
+
+  h1{
+    color: white;
+    text-align: center;
+}
+.xinxianshi{
+    text-align: right;
+    margin-bottom: 5px;
+}
+ .sousuokuang{
+    line-height: 21px;
+    width: 353px;
+    height: 23px;
+    padding: 3px 2px;
+    font-size: 16px;
+    border: 1px solid #a2a2a2;
+    margin-top: 7px;
+    text-align: center;
+}  
+  </style>
+ </head>
+<body>
+
+    <div class="header">
+      <h1>搜索引擎大全</h1>
+    </div>
+    <div class="xinxianshi">
+       <a href="http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b342_c513" target="_blank">随时随地，来点新鲜事儿</a>
+    </div>
+    <div>
+        <input type="text" id="tishi" class="sousuokuang" placeholder="请输入您想查找的内容">
+    </div>  
+
+   <script type="text/javascript">
+    var curIndex = 0;
+    //时间间隔(单位毫秒)，每秒钟显示一张，数组共有3张图片放在img文件夹下
+    var timeInterval = 10000;
+    
+                            //定义一个存放照片位置的数组，可以放任意个，在这里放3个
+    var arr = new Array();
+    arr[0] = "img/bying2.jpg";
+    arr[1] = "img/bying5.jpg";
+    arr[2] = "img/bying7.jpg";
+    arr[3] = "img/bying8.jpg";
+    arr[4] = "img/bying5.jpg";
+    setInterval(changeImg, timeInterval);
+    function changeImg() {
+    if (curIndex == arr.length - 1) {
+    curIndex = 0;
+    } else {
+    curIndex += 1;
+    }
+    
+                                      //设置body的背景图片
+    document.body.style.backgroundImage = "URL("+arr[curIndex]+")";  //显示对应的图片
+    }
+    </script>
+   
+ </body>
+</html>  
+<!--
+    1、导航栏和页面下方li元素，使鼠标点击字周围区域也可跳转；
+    2、下方引擎“简”图标和文字不够平齐；
+    3、页面顶部做一个可以动态切换的图片；
+    4、页面配色重新配置；
+    5、背景图片可以切换，参考Biying；
+    6、上面一个输入框，下面多个图标，点击跳转到搜索结果；
+    7、无聊的时候，给用户提供可浏览内容；
+-->
