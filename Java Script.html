@@ -3,20 +3,25 @@
     <head>
         <meta charset="utf-8">
         <title>Java Script</title>
-        <script>
-            function changeLink(){
-                document.getElementById('myAnchor').innerHTML="Runoob";
-                document.getElementById('myAnchor').href="//www.runoob.com";
-                document.getElementById('myAnchor').title="_blank";
-            }
-        </script>
+
     </head>
 
 <body>
-
-    <a id="myAnchor" href="//www.microsoft.com" target="_blank">Microsoft</a>
-    <input type="button" onclick="changeLink()" value="修改链接">
-
+        <script>
+          function changeImage()
+          {
+              element=document.getElementById('myimage')
+              if(element.src.match("green")){
+                  element.src="./img/white.png";
+              }
+              else{
+                  element.src="./img/green.png";
+              }
+          }
+            </script>
+    <img id="myimage" onclick="changeImage()" src="./img/green.png" width="20" height="20">
+    <p>点击试验点的切换效果</p>
+    
 </body>
 </html>
 
