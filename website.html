@@ -15,7 +15,7 @@
   .header{
       /*background-color: rgb(236, 214, 236);*/
       padding: 2px;
-      text-align: centers;
+      text-align: center;
   }
   h1{
     color: white;
@@ -23,9 +23,9 @@
 }
   .topnav{
       overflow: hidden;
-      background-color: slategray;
+      background-color: #D4DFE6;
       text-align: center;
-          
+      
   }
   li:hover{
       background-color: wheat;
@@ -37,15 +37,12 @@ li{
 }
   </style>
  </head>
+
 <body>
 
     <div class="header">
       <h1>搜索引擎大全</h1>
-      <!--<p>
-            搜索引擎大全收录了众多主流搜索引擎，为广大网民提供免费快捷搜索渠道，
-            集成各家搜索引擎大全的优势，不仅仅是普通搜索，
-            还有图片搜索，音乐搜索，视频搜索，购物搜索，微信微博搜索，知识词典搜索大全，各种搜索引擎集大成。
-        </p>-->
+
     </div>
 <div class="topnav">
     <ul>
@@ -55,9 +52,6 @@ li{
         <li><a href="https://www.12345good.com/tupian.shtml" target=_blank> 图片 </a></li>
         <li><a href="https://www.12345good.com/meishi.shtml" target=_blank> 美食 </a></li>
         <li><a href="https://www.12345good.com/yingyu.shtml" target=_blank> 英语 </a></li>
-      <!--
-        <li><a href="https://www.12345good.com/gouwu.shtml" target=_blank> 购物 </a></li>
-        -->  
    </ul>
 </div>
 <br>
@@ -166,6 +160,7 @@ li{
                         </div>			   
                     </form>
                 </div>
+        <!--
                 <div class="sousuoyinqing">
                     <form action="https://search.yahoo.com/search" target=_blank> 
                         <div class="sousuo-tupian">
@@ -179,6 +174,7 @@ li{
                         </div>			   
                     </form>    
                 </div>
+        -->
                 <div class="sousuoyinqing">
                     <form action="https://s.taobao.com/search" target=_blank> 
                         <div class="sousuo-tupian">
@@ -205,7 +201,7 @@ li{
                         </div>				   
                     </form> 
                 </div>
-              
+  <!--          
                 <div class="sousuoyinqing">
                     <form action="https://s.hc360.com" target=_blank> 
                         <div class="sousuo-tupian">
@@ -219,6 +215,7 @@ li{
                         </div>			   
                     </form> 
                 </div>
+-->  
                 <div class="sousuoyinqing">
                     <form action="https://search.jd.com/Search" target=_blank> 
                         <div class="sousuo-tupian">
@@ -249,6 +246,7 @@ li{
                         height: 38px;
                         text-align: center;
                         float: left;
+                     
                     }
                     .sousuo-tupian img{
                         width: auto;
@@ -261,6 +259,7 @@ li{
                         padding: 0px;
                         margin-top: 7px;
                         margin-left: 10px;
+                      
                         cursor: pointer;  
                         float: left;
                     }
@@ -289,7 +288,7 @@ li{
                         height: auto;
                         margin: auto;
                         padding: 5px;
-                        border: rgb(245, 194, 127) solid;
+                        border:#8EC0E4 solid;
                         border-bottom-style: none;
                         background-color: white;
                         
@@ -423,36 +422,30 @@ li{
 -->  
 
 <div class="xiakuang">
-       
-        <div class="baidu">
-        <form action="http://www.baidu.com/baidu" target=_blank> 
-                 <div class="baidu-img">
-                 <a title="百度一下" href="http://www.baidu.com" target="_blank" >  
-                  <img src="C:\Users\magic\Documents\codes\git\img\baidu.png"/>
-                </a></div>	
-             <input type="text" class="baidu-kuang" name="wd">			
-             <button type="submit" class="baidu-anniu">百度一下</button> 
-             <div class="backtotop">
-                 <a href="#top" target="_self">
-                     <img src="C:\Users\magic\Documents\codes\git\img\12345huidaodingbu.gif"/>
-                </a>  
-                			   
-                </div> 
-        </form> 
-        </div>    
-
+    
+             <div id="footer">
+                    Copyright © 2019 Yang Geyang
+                    <br>
+                    <span id="poweredby"></span>powered by html and css on Windows10.</span>
+  
+            </div>
+<!--
+            <div class="backtotop">
+                    <a href="#top" target="_self">
+                        <img src="C:\Users\magic\Documents\codes\git\img\12345huidaodingbu.gif"/>
+                   </a>                 			   
+                </div>  
+-->
 </div>
-
-
                     <style type="text/css">
                         .xiakuang{
                         width: 980px;
                         height: auto;
                         margin: auto;
                         padding: 5px;
-                        border: rgb(245, 194, 127) solid;
+                        border: #8EC0E4 solid;
                         background-color: white;
-                        margin-bottom: 10px;
+                        margin-bottom: 5px;
                         line-height: 26px; <!--行高-->
                         padding-left: 10px;
                         text-align: left;
@@ -464,81 +457,32 @@ li{
                         cursor: pointer;
                         text-decoration: none;   /*text-decoration属性，规定添加到文本的装饰，下划线、上划线、删除线等*/
                         }
-
-                    .baidu{
-                        width= 500px;
-                        height: 45px;
-                        margin: 0 auto;
-                        dispaly: inline-block;
-                        text-align:left;   /*text-align属性指定元素的水平对齐方式*/
-                        vertical-align: middle;
-                    }
-                    .baidu-img{
-                        width: 80px;
-                        height: 39px;
-                        text-align: center;
-                        float: left;
-                        padding: 1px;
-                        margin-top: 0px;
-                    }
-                    .baidu-img img{
-                        width: auto;
-                        height: auto;
-                        vertical-align: middle; vertical-align属性设置一个元素的垂直对齐方式，middle：把此元素放在父元素的中部
-                   
-                    .baidu-kuang{
-                       width: 170px;
-                       height: 20px;
-                       padding: 2px 5px;
-                       margin-left: 50px;
-                       margin-top: 12px;
-                       border: gray 1px solid;
-                     
-                    }
-                    .baidu-anniu{
-                       width: 80px;
-                       height: 28px;
-                       margin-left: 2px;
-                       margin-right: 5px;
-                      
-                    }
-                    .baidu-anniu:hover{
-                       background-color: wheat; 
-                       border-color: wheat;
-                    }
+/*
                     .backtotop{
                         width: 100px;
                         height: 20px;
                         float: right;
                         margin-right: 55px;
-                        margin-top: 13px;
+                      
+                        margin-bottom: 2px;
                         cursor: pointer;
                         border-style: solid;
                         border-width: 2px;
-                        border-color: lightseagreen; /*border-color和border-width等属性使用时，要先加border-style属性来设置边框*/
+                        border-color: lightseagreen; 
                     }
                     .backtotop:hover{
                         border-color: rgb(245, 114, 74);
                     }
-
+/*border-color和border-width等属性使用时，要先加border-style属性来设置边框*/
+                    #footer{
+                    text-align: center;
+                    min-height: 20px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    font: 15px bold;
+                    }
                     </style>
 
-<div id="footer">
-
-Copyright © 2019 Yang Geyang
-<br>
-<span id="powered by">powered by html and css on Windows10.</span>
-</div>
-
-<style type="text/css">
-#footer{
-    text-align: center;
-    min-height: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font: 15px bold;
-}
-</style>
    <script type="text/javascript">
     var curIndex = 0;
     //时间间隔(单位毫秒)，每秒钟显示一张，数组共有3张图片放在img文件夹下

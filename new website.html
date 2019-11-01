@@ -8,97 +8,69 @@
   body{
       margin: 0;
       padding: 0;
-      background-image: url("./img/bying2.jpg"); 
+      
+      background-image: url("./img/bying1.jpg");  /*照片文件和代码同级，只要一个.就够了，上一级用..。MAC上用后斜杠，Windows上用前斜杠*/
+      /*background-color: rgb(104, 157, 170);*/
     }
 
   h1{
     color: white;
     text-align: center;
 }
-.xinxianshi{
-    text-align: right;
-    margin-bottom: 5px;
-}
- .sousuokuang{
-    line-height: 21px;
-    width: 353px;
-    height: 23px;
-    padding: 3px 2px;
-    font-size: 16px;
-    border: 1px solid #a2a2a2;
-    margin-top: 7px;
-    text-align: center;
-}  
   </style>
  </head>
+
 <body>
 
     <div class="header">
       <h1>搜索引擎大全</h1>
     </div>
-    <div class="xinxianshi">
-       <a href="http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b342_c513" target="_blank">随时随地，来点新鲜事儿</a>
-    </div>
-    <div>
-        <input type="text" id="tishi" class="sousuokuang" placeholder="请输入您想查找的内容">
-    </div>  
+
+    <div class="sousuokuang">  
+    <input type="text" class="kuang" name="wd" placeholder="请输入您想查找的内容">			
+                        
+    </div>				   
+               
+                <style type="text/css">
+                   
+                    .kuang{
+                        line-height: 21px;
+                        width: 353px;
+                        height: 23px;
+                        padding: 3px 2px;
+                        font-size: 16px;
+                        border: 1px solid #a2a2a2;
+                       
+                        text-align: left;
+                    }   
+                    .sousoukuang{
+                        text-align: center;
+                    }
+                </style>          
+
+   <script type="text/javascript">
+    var curIndex = 0;
+    //时间间隔(单位毫秒)，每秒钟显示一张，数组共有3张图片放在img文件夹下
+    var timeInterval = 8000;
+    
+                            //定义一个存放照片位置的数组，可以放任意个，在这里放3个
+    var arr = new Array();
+    arr[0] = "img/bying1.jpg";
+    arr[1] = "img/bying2.jpg";
+    arr[2] = "img/bying3.jpg";
+    arr[3] = "img/bying4.jpg";
+    arr[4] = "img/bying5.jpg";
+    setInterval(changeImg, timeInterval);
+    function changeImg() {
+    if (curIndex == arr.length - 1) {
+    curIndex = 0;
+    } else {
+    curIndex += 1;
+    }
+                                   //设置body的背景图片
+    document.body.style.backgroundImage = "URL("+arr[curIndex]+")";  //显示对应的图片
+    }
+    </script>
    
-    <div class="center_photo">
-        <img alt="tupian" src="./img/bying1.jpg" id="img"/>
-        <div class="point" style="display:block;">
-            <ul>
-                <li id="p1" onmouseover="point(this)" onmouseout="leave()">
-                    <img src="./img/green.png" id="i1"/>
-                </li>
-                <li id="p2" onmouseover="point(this)" onmouseout="leave()">
-                        <img src="./img/white.png" id="i2"/>
-                    </li>
-                    <li id="p3" onmouseover="point(this)" onmouseout="leave()">
-                            <img src="./img/white.png" id="i3"/>
-                        </li>
-                        <li id="p4" onmouseover="point(this)" onmouseout="leave()">
-                                <img src="./img/white.png" id="i4"/>
-                            </li>
-                            <li id="p5" onmouseover="point(this)" onmouseout="leave()">
-                                    <img src="./img/white.png" id="i5"/>
-                                </li>
-            </ul>
-        </div>
-    </div>
-
-<style type="text/css">
-.center_photo{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-.point{
-    text-align: center;
-
-}
-.point ul li img{width: 20px;height: 20px;}
-.point ul li img:hover{cursor: pointer;}
-</style>
-
-<script type="text/javascript">
-var min=1, max=5;
-var imgList = new Array();
-imgList[0]="./img/bying1.jpg";
-imgList[1]="./img/bying2.jpg";
-imgList[2]="./img/bying3.jpg";
-imgList[3]="./img/bying4.jpg";
-imgList[4]="./img/bying5.jpg";
-
-var li_imgList = new Array();
-li_imgList[0]="i1";
-li_imgList[1]="i2";
-li_imgList[2]="i3";
-li_imgList[3]="i4";
-li_imgList[4]="i5";
-
-
-</script>
-
  </body>
 </html>  
