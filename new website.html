@@ -17,7 +17,6 @@
     margin-top: 20px;
     
     }
-  }
   </style>
  </head>
 
@@ -28,55 +27,37 @@
     </div>
 
   <div class="sousuokuang">
-    <input type="text" class="sousuo-kuang" placeholder="请输入搜索关键词">  
+    <input type="text" class ="sousuo-kuang" placeholder="请输入搜索关键词">  
   </div>	
   <div class="tupian">
-    <a href="http://www.baidu.com" target="_blank">
+    <a onclick="clickEngine('baidu');" target="_blank">
     <img class="tupian1" title="点击搜索" target="_blank" src="C:\Users\magic\Documents\codes\git\img\baidu.png"/>
     </a>
-    <a href="https://www.google.com/" target="_blank">
+    <a onclick="clickEngine('google');" target="_blank">
     <img class="tupian2" title="点击搜索" target="_blank" src="C:\Users\magic\Documents\codes\git\img\google.png"/>
     </a>
-    <a href="https://www.sogou.com/" target="_blank">
+    <a onclick="clickEngine('sougou');" target="_blank">
     <img class="tupian3" title="点击搜索" target="_blank" src="C:\Users\magic\Documents\codes\git\img\sougou.png"/>
     </a>
-    <a href="https://www.so.com/" target="_blank">
+    <a onclick="clickEngine('360');" target="_blank">
     <img class="tupian4" title="点击搜索" target="_blank" src="C:\Users\magic\Documents\codes\git\img\360.png"/>
     </a>
   </div>
-  <style type="text/css">
-  .tupian{
-    text-align: center;
-    
-  }
-  .tupian img{
-    margin:20px 10px;
-    vertical-align: middle;
-  }
-  a{
-    cursor: pointer;
-    text-decoration: none;   
-  }
-  </style>
 
-       <script type="text/javascript">
-      engines = {
-      baidu: 'https://www.baidu.com/s?wd=',
-      google: 'https://www.google.com/search?q=',
-      360:'https://www.so.com/s?q=',
-      sougou:'https://www.sogou.com/web?query=',
-      biying:'https://www.bing.com/search?q=',
-      taobao:'https://s.taobao.com/search?q=',
-    }
-    
-    function clickEngine(key){
-    const searchWord = document.querySelector("keyword");
-    const link = engines[key] + searchWord;
-    windows.open(link,newTab)
+<script type="text/javascript">
+      var engines = new engines(); 
+      engines[baidu] ='https://www.baidu.com/s?wd=',
+      engines[google] = 'https://www.google.com/search?q=',
+      engines[sougou] ='https://www.sogou.com/web?query=',
+      engines[360] ='https://www.so.com/s?q=',
+      engines[bing] ='https://www.bing.com/search?q=',
+      engines[taobao] ='https://s.taobao.com/search?q=',
+   
+    function clickEngine(){    
+    windows.open(engines[] + document.querySelector(".sousuo-kuang"));
 }
 </script>		   
-                 <style type="text/css">
-            
+                 <style type="text/css">            
                  .sousuokuang{                  
                         width: 600px;
                         height: 50px;
@@ -98,7 +79,21 @@
                         vertical-align: middle;
                         margin: 8px 10px;
                         float: left;
-                    }                      
+                    }  
+                
+  .tupian{
+    text-align: center;
+    
+  }
+  .tupian img{
+    margin:20px 10px;
+    vertical-align: middle;
+  }
+  a{
+    cursor: pointer;
+    text-decoration: none;   
+  }
+                
                 </style>          
 <!--
    <script type="text/javascript">
