@@ -7,15 +7,17 @@
   <style type="text/css">
   body{
       margin: 0;
-      padding: 0;
-      
-      background-image: url("./img/bying1.jpg"); 
+      padding: 0;      
+      background-image: url("./img/bying5.jpg"); 
     }
-
   h1{
     color: white;
     text-align: center;
-}
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+    }
+  }
   </style>
  </head>
 
@@ -25,26 +27,78 @@
       <h1>搜索引擎大全</h1>
     </div>
 
-    <div class="sousuokuang">  
-    <input type="text" class="kuang" name="wd" placeholder="请输入您想查找的内容">			
-                        
-    </div>				   
-               
-                <style type="text/css">
-                   
-                    .kuang{
-                        line-height: 21px;
-                        width: 353px;
-                        height: 23px;
-                        padding: 3px 2px;
-                        font-size: 16px;
-                        border: 1px solid #a2a2a2;
-                       
+  <div class="sousuokuang">
+    <input type="text" class="sousuo-kuang" placeholder="请输入搜索关键词">  
+  </div>	
+  <div class="tupian">
+    <a href="http://www.baidu.com" target="_blank">
+    <img class="tupian1" title="点击搜索" target="_blank" src="C:\Users\magic\Documents\codes\git\img\baidu.png"/>
+    </a>
+    <a href="https://www.google.com/" target="_blank">
+    <img class="tupian2" title="点击搜索" target="_blank" src="C:\Users\magic\Documents\codes\git\img\google.png"/>
+    </a>
+    <a href="https://www.sogou.com/" target="_blank">
+    <img class="tupian3" title="点击搜索" target="_blank" src="C:\Users\magic\Documents\codes\git\img\sougou.png"/>
+    </a>
+    <a href="https://www.so.com/" target="_blank">
+    <img class="tupian4" title="点击搜索" target="_blank" src="C:\Users\magic\Documents\codes\git\img\360.png"/>
+    </a>
+  </div>
+  <style type="text/css">
+  .tupian{
+    text-align: center;
+    
+  }
+  .tupian img{
+    margin:20px 10px;
+    vertical-align: middle;
+  }
+  a{
+    cursor: pointer;
+    text-decoration: none;   
+  }
+  </style>
+
+       <script type="text/javascript">
+      engines = {
+      baidu: 'https://www.baidu.com/s?wd=',
+      google: 'https://www.google.com/search?q=',
+      360:'https://www.so.com/s?q=',
+      sougou:'https://www.sogou.com/web?query=',
+      biying:'https://www.bing.com/search?q=',
+      taobao:'https://s.taobao.com/search?q=',
+    }
+    
+    function clickEngine(key){
+    const searchWord = document.querySelector("keyword");
+    const link = engines[key] + searchWord;
+    windows.open(link,newTab)
+}
+</script>		   
+                 <style type="text/css">
+            
+                 .sousuokuang{                  
+                        width: 600px;
+                        height: 50px;
                         text-align: left;
-                    }   
-                    .sousoukuang{
-                        text-align: center;
-                    }
+                        overflow: hidden;
+                        margin: 0 auto;
+                        vertical-align: middle;
+                        margin-top: 50px;
+                        font-size: 20px;
+                        background-color: white;
+                 }
+                 .sousuo-kuang{
+                        line-height: 39px;
+                        width: 575px;
+                        height: 31px;
+                        padding-left: 5px;
+                        font-size: 16px;
+                        border: 1px solid white;
+                        vertical-align: middle;
+                        margin: 8px 10px;
+                        float: left;
+                    }                      
                 </style>          
 <!--
    <script type="text/javascript">
