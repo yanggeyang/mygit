@@ -43,20 +43,23 @@
     <img class="tupian4" title="点击搜索" target="_blank" src="C:\Users\magic\Documents\codes\git\img\360.png"/>
     </a>
   </div>
-
-<script type="text/javascript">
-      var engines = new engines(); 
-      engines[baidu] ='https://www.baidu.com/s?wd=',
-      engines[google] = 'https://www.google.com/search?q=',
-      engines[sougou] ='https://www.sogou.com/web?query=',
-      engines[360] ='https://www.so.com/s?q=',
-      engines[bing] ='https://www.bing.com/search?q=',
-      engines[taobao] ='https://s.taobao.com/search?q=',
-   
-    function clickEngine(){    
-    windows.open(engines[] + document.querySelector(".sousuo-kuang"));
-}
-</script>		   
+  <script type="text/javascript">
+    var engines = {}; 
+    engines["baidu"] ='https://www.baidu.com/s?wd=',
+    engines["google"] = 'https://www.google.com/search?q=',
+    engines["sougou"] ='https://www.sogou.com/web?query=',
+    engines["360"] ='https://www.so.com/s?q=',
+    engines["bing"] ='https://www.bing.com/search?q=',
+    engines["taobao"] ='https://s.taobao.com/search?q=',
+  
+    console.log(engines)
+  function clickEngine(engine){   
+    const url = engines[engine] + document.querySelector(".sousuo-kuang").value; 
+    // console.log(url) 在控制台输出信息
+  window.open(url);
+  }
+  </script>
+	   
                  <style type="text/css">            
                  .sousuokuang{                  
                         width: 600px;
