@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link href="sou.ico" rel="icon" type="image/x-icon" />
+  <title>搜索引擎大全</title>
+  <style type="text/css">
+  body{
+      margin: 0;
+      padding: 0;      
+      background-image: url("./img/bying1.jpg"); 
+    }
+  h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    
+    }
+  </style>
+ </head>
+
+<body>
+
+    <div class="header">
+      <h1>搜索引擎大全</h1>
+    </div>
+
+    <div class="icon">      
+      <a title="音乐" href="https://www.12345good.com/yinyue.shtml" target="_blank">  
+        <img src="C:\Users\magic\Documents\codes\git\img\music.png" width ="35" height="35"/>
+      </a>      
+      <a title="电影" href="https://www.12345good.com/dianying.shtml" target="_blank">  
+        <img src="C:\Users\magic\Documents\codes\git\img\movie.png" width="35" height="35"/>
+      </a>  
+      <a title="新闻" href="https://www.12345good.com/news.shtml" target="_blank">  
+        <img src="C:\Users\magic\Documents\codes\git\img\news.png" width="35" height="35"/>
+      </a> 
+      <a title="图片" href="https://www.12345good.com/picture.shtml" target="_blank">  
+        <img src="C:\Users\magic\Documents\codes\git\img\picture.png" width="35" height="35"/>
+      </a>  
+      <a title="购物" href="https://www.12345good.com/gouwu.shtml" target="_blank">  
+        <img src="C:\Users\magic\Documents\codes\git\img\shopping.png" width="35" height="35"/>
+      </a>
+      <a title="美食" href="https://www.12345good.com/meishi.shtml" target="_blank">  
+        <img src="C:\Users\magic\Documents\codes\git\img\meishi.png" width="35" height="35"/>
+      </a>    
+      <a title="新鲜事" href="http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b342_c513" target="_blank">  
+        <img src="C:\Users\magic\Documents\codes\git\img\funny.png" width="35" height="35"/>
+      </a>
+    </div>
+
+  <div class="sousuokuang">
+    <form action="http://www.baidu.com/baidu" target=_blank> 
+    <input type="text" class ="sousuo-kuang" name="wd" placeholder="请输入搜索关键词，回车可百度" ></form>  
+  </div>	
+
+  <div class="tupian">
+    <a onclick="clickEngine('google');">
+    <img title="谷歌搜索" target="_blank" src="C:\Users\magic\Documents\codes\git\img\google.png"/>
+    </a>
+    <a onclick="clickEngine('sougou');">
+    <img title="搜狗搜索" target="_blank" src="C:\Users\magic\Documents\codes\git\img\sougou.png"/>
+    </a>
+    <a onclick="clickEngine('360');">
+    <img title="360搜索" target="_blank" src="C:\Users\magic\Documents\codes\git\img\360.png"/>
+    </a>
+    <a onclick="clickEngine('tianmao');">
+      <img title="天猫购物" target="_blank" src="C:\Users\magic\Documents\codes\git\img\tianmao.png"/>
+    </a>  
+  </div>
+
+  <script type="text/javascript">
+    var engines = {};
+    engines["baidu"] ='https://www.baidu.com/s?wd=',
+    engines["google"] = 'https://www.google.com/search?q=',
+    engines["sougou"] ='https://www.sogou.com/web?query=',
+    engines["360"] ='https://www.so.com/s?q=',
+    engines["taobao"] ='https://s.taobao.com/search?q=',
+    engines["tianmao"] ='https://list.tmall.com/search_product.htm?q=',
+    engines["wangyiyun"] ='https://music.163.com/#/search/m/?s=',
+    engines["youku"] ='https://so.youku.com/search_video/q_',
+    console.log(engines)
+  function clickEngine(engine){   
+    const url = engines[engine] + document.querySelector(".sousuo-kuang").value; 
+    // console.log(url) 在控制台输出信息
+  window.open(url);
+  }
+
+  function bigImg(x){
+    x.style.height = '50'
+    x.style.width = '50'
+  }
+  function normalImg(x){
+    x.style.height = '35'
+    x.style.width = '35'
+  }
+
+  </script>
+	   
+<style type="text/css">            
+  .sousuokuang{                  
+  width: 600px;
+  height: 50px;
+  text-align: left;
+  overflow: hidden;
+  margin: 0 auto;
+  vertical-align: middle;
+  margin-top: 0px;
+  font-size: 20px;
+  background-color: white;
+  }
+  .sousuo-kuang{
+  line-height: 39px;
+  width: 575px;
+  height: 31px;
+  padding-left: 5px;
+  font-size: 16px;
+  border: 1px solid white;
+  vertical-align: middle;
+  margin: 8px 10px;
+  float: left;
+  }  
+                
+  .tupian{
+  text-align: center;
+    
+  }
+  .tupian img{
+  margin:20px 10px;
+  vertical-align: middle;
+  }
+  a{
+  cursor: pointer;
+  text-decoration: none;   
+  } 
+  .icon{
+  text-align: right;
+  margin-bottom: 0;
+  margin-right: 10px;
+  }
+  .icon img{ 
+  margin: 5px 5px;
+  }  
+           
+</style>          
+
+   <script type="text/javascript">
+    var curIndex = 0;
+    var timeInterval = 8000;                        
+    var arr = new Array();
+    arr[0] = "img/bying1.jpg";
+    arr[1] = "img/bying2.jpg";
+    arr[2] = "img/bying3.jpg";
+    arr[3] = "img/bying4.jpg";
+    arr[4] = "img/bying5.jpg";
+    setInterval(changeImg, timeInterval);
+    function changeImg() {
+    if (curIndex == arr.length - 1) {
+    curIndex = 0;
+    } else {
+    curIndex += 1;
+    }                             
+    document.body.style.backgroundImage = "URL("+arr[curIndex]+")"; 
+    }
+    </script>
+
+ </body>
+</html>  
