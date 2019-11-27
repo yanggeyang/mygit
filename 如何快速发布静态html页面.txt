@@ -1,0 +1,35 @@
+一、快速发布html静态页面
+2种方式：
+1、本地serve模块：
+ https://www.npmjs.com/package/serve
+即在Git Bash中直接 npx server。
+
+2、在线gh-pages docs文件目录：
+ https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+即在Github的setting-GitHub Pages-Source中，选择master branch即可，github便会返回一个url。
+
+
+二、本地代码推送github：
+先在自己的github上，新建仓库。
+代码目录下右键Git Bash here，接着输入以下命令，即可将本地代码传入github的master分支。
+1. 添加文件至暂存区： git add .
+2. 提交文件至本地仓库，单引号中可写任意值： git commit -m 'test'
+3. 推送至远程仓库master中： git push origin master
+
+三、如何快速安装webdriver
+使用Cmder、cmd、Git Bash等在一个空文件中执行以下命令：
+1. pip install webdrivermanager
+2. webdrivermanager chrome
+3. 手动将目录添加到环境变量Path： 
+ C:\Users\user\AppData\Local\salabs_\WebDriverManager\bin
+该目录会在第2步结束后有提醒。
+
+安装了Python后，pip便自动可用，若不行，可重启Cmder。
+
+四、快速启动自己的robot项目
+
+1. 项目目录下跑： pip install -r requirements.txt
+
+txt文件中是链接状态的robotframework-seleniumlibrary，
+链接到https://pypi.org/project/robotframework-seleniumlibrary/
+2. 跑自己robot后缀的代码文件： robot demo.robot
